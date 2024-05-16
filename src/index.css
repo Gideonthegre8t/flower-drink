@@ -9,60 +9,66 @@
 }
 
 @font-face {
-  font-family: inknut ;
+  font-family: inknut;
   src: url(../src/assets/font/Inknut_Antiqua/InknutAntiqua-Regular.ttf);
 }
 * {
   margin: 0;
   box-sizing: border-box;
- 
 }
 
 body {
   color: #000;
   font-family: "inter";
   background-color: #fff;
-}
+font-size: 14px;
+font-weight: 400;
+line-height: 16.94px;
+text-align: left;
 
+}
 
 .header-wallpaper-mobile {
   position: absolute;
-  max-height: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   top: -0.5em;
   z-index: -1;
 }
 
-.header-container{
+.header-container {
   margin: 1em 1em;
+}
+
+.logo {
+  font-family: "impact";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.39px;
+  text-align: left;
+  color: #fff;
+}
+
+.banner {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0px;
 
 }
 
-.logo{
-font-family: "impact";
-font-size: 20px;
-font-weight: 400;
-line-height: 24.39px;
-text-align: left;
-color: #fff;
+.cocktail-banner{
+  width: 100%;
 }
 
-.banner{
-margin: 0 auto;
-justify-content: center; 
-align-items: center; 
-margin: 1em 0px;
-
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
 }
 
-.description{
-font-size: 14px;
-font-weight: 400;
-line-height: 16.94px;
-}
-
-.content-container{
+.content-container {
   margin: 20px 0px;
   display: flex;
 }
@@ -70,14 +76,13 @@ line-height: 16.94px;
 .content-container {
   display: grid;
   grid-template-columns: 20% 80%; /* 80% for drinks and 20% for menu */
-  gap: 5px; 
+  gap: 5px;
 }
 
 .drinks {
   display: flex;
   flex-direction: column;
   gap: 15px;
-
 }
 
 .drink-image {
@@ -91,26 +96,26 @@ line-height: 16.94px;
   margin-top: 3.5em;
 }
 
-.order-now{
-margin-top: 1em;
-width: 132px;
-height: 40px;
-top: 358px;
-left: 129px;
-gap: 0px;
-border-radius: 10px;
-color: #fff;
-background: #5C4407;
+.order-now {
+  margin-top: 1em;
+  width: 132px;
+  height: 40px;
+  top: 358px;
+  left: 129px;
+  gap: 0px;
+  border-radius: 10px;
+  color: #fff;
+  background: #5c4407;
 }
 
-.arrow-down{
+.arrow-down {
   margin-bottom: -5px;
 }
 
 .item-frame {
   width: 88px;
   height: 89px;
-  background: #F2D588;
+  background: #f2d588;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -119,22 +124,140 @@ background: #5C4407;
 
 .item-container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  margin-top: 4em; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
 }
 
 .item-price {
   width: 183px;
   height: 56px;
-  background: #F2D588;
+  background: #f2d588;
   border-radius: 15px;
   display: grid;
   grid-template-columns: 50% 50%;
   justify-items: center;
   align-items: center;
-  margin-top:0.5em;
-  margin-left: -1em; 
+  margin-top: 0.5em;
+  margin-left: -1em;
   color: #fff;
 }
+
+.about-container {
+  margin-top: -0.5em;
+}
+
+.about-top {
+  display: flex;
+  gap: 2em;
+  background: #2E2203;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1em;
+  color: #fff;
+
+}
+
+.about-content {
+  margin: 1em 1em;
+}
+
+.about-text,
+.know-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  font-family: "inknut";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 41.26px;
+}
+
+.about-text {
+  color: #d1250e;
+}
+
+.about-header {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  margin: 0.5em 1em;
+    color: #fff;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #fff;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: left;
+margin-top: 2em;
+
+}
+
+.know-button {
+  margin: 0 auto;
+  margin-top: 2em;
+  background: #f2d588;
+  width: 221px;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.about-wallpaper-mobile{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: 4.4em;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.paloma-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8em;
+}
+
+
+.paloma{
+width: 80%;
+}
+
+.bar-container{
+  margin: 0.5em 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #2E2203;
+
+}
+
+.product-header{
+  margin-top: 1.5em;
+  color: #E5AA11;
+}
+
+.drink-card{
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2.5em 0px;
+  color: #fff
+}
+
+.drink-card > p{
+  margin-top: 0.5em;
+}
+
 
