@@ -1,13 +1,14 @@
 import React from "react";
-import mobileWallpaper2 from "../assets/images/wallpaper2-mobile.png";
+import aboutWallpaper1 from "../assets/images/wallpaper2-mobile.png";
+import aboutWallpaper2 from "../assets/images/about-wallpaper-desktop.png";
 
 function About() {
   return (
     <article>
       <img
-        className="about-wallpaper-mobile"
-        src={mobileWallpaper2}
-        alt="header-wallpaper"
+        className="about-wallpaper-mobile mobile"
+        src={aboutWallpaper1}
+        alt="about-wallpaper"
       />
 
       <div className="about-container">
@@ -18,7 +19,10 @@ function About() {
         </div>
 
         <div className="about-content">
-          <div>
+          <div className="desktop" >
+            <img className="about-wallpaper" src={aboutWallpaper2} alt="about-wallpaper" />{" "}
+          </div>
+          <div className="about-text-wrapper">
             <h3 className="about-text">ABOUT US</h3>
             <h2 className="about-header">WHERE YOU EXPERIENCE GOOD TASTE</h2>
 
@@ -26,10 +30,10 @@ function About() {
               <p>
                 From classic cocktails to innovative twists and everything in
                 between, join us on a journey of taste and exploration as we
-                celebrate the art of cocktail crafting
+                celebrate the art of cocktail crafting.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                Lorem i psum dolor sit amet, consectetur adipiscing elit. Etiam
                 quis sagittis nisl. Morbi mi magna, congue id diam non, eleifend
                 dignissim neque. Fusce convallis ex at eros feugiat elementum.
                 Ut non luctus ante. In blandit purus a eros tempus.
@@ -42,7 +46,6 @@ function About() {
           </div>
         </div>
       </div>
-
     </article>
   );
 }
