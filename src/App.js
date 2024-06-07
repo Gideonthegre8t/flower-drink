@@ -1,25 +1,37 @@
 import React from "react";
-import Header from "./component/Header";
-import About from "./component/About";
-import Product from "./component/Product";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "../src/component/Header";
+import About from "../src/component/About";
+import Product from "../src/component/Product";
 import Footer from "../src/component/Footer";
-import Advert from "./component/Advert";
-
-// import About2 from "./component/About2";
+import Advert from "../src/component/Advert";
+import About2 from "../src/component/About2";
+import CartList from "../src/component/cartList";
+import Cart from "../src/component/Cart";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Advert />
-      <About />
-      <Product />
-      <Footer />
-
-      {/* <About2 /> */}
-
-    
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Advert />
+                <About />
+                <Product />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/cart-list" element={<CartList />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/about2" element={<About2 />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import icon1 from "../assets/images/icon1.png";
 import Drink5 from "../assets/images/Drink5.png";
 import tequila from "../assets/images/tequila.png";
@@ -12,8 +13,14 @@ import harvey from "../assets/images/Harvey Wallbanger.png";
 import bloodyMaryCup from "../assets/images/bloody-mary-cup.png";
 
 function Product() {
+  const navigate = useNavigate();
+
+  const handlePlaceOrderClick = () => {
+    navigate("/cart-list");
+  };
+
   return (
-    <section>
+    <section id="product">
       <div className="product-container">
         <div className="paloma-container paloma-card mobile">
           <div className="item-frame">
@@ -57,7 +64,6 @@ function Product() {
             </div>
           </div>
 
-          
           <div className="bar-content rack2 desktop">
             <div className="drink-card">
               <img src={hailMary} alt="hail-mary" />
@@ -65,19 +71,19 @@ function Product() {
             </div>
 
             <div className="drink-card">
-              <img src={spicyMagarita} alt="tequila sour" />
-              <p>spicyMagarita</p>
+              <img src={spicyMagarita} alt="spicy magarita" />
+              <p>Spicy Magarita</p>
             </div>
 
             <div className="drink-card">
-              <img src={corpseReviver} alt="ranch water" />
+              <img src={corpseReviver} alt="corpse reviver" />
               <p>Corpse Reviver</p>
             </div>
             <div className="drink-card">
-              <img src={harvey} alt="ranch water" />
+              <img src={harvey} alt="harvey" />
               <p>Harvey Wallbanger</p>
             </div>
-          </div> 
+          </div>
         </div>
 
         <div className="bloody-mary-card  wrapper mobile">
@@ -99,8 +105,8 @@ function Product() {
           </div>
         </div>
 
-        <div className="explore-button desktop">
-          <p>Explore more</p>
+        <div className="explore-button desktop" onClick={handlePlaceOrderClick}>
+          <p>Place Order</p>
         </div>
       </div>
     </section>

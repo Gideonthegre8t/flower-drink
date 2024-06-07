@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 import Drink1 from "../assets/images/Drink1.png";
 import Drink2 from "../assets/images/Drink2.png";
 import Drink3 from "../assets/images/Drink3.png";
@@ -10,8 +12,54 @@ import desktopWallpaper from "../assets/images/Background-desktop.jpg";
 import banner from "../assets/images/banner.png";
 
 function Header() {
+  const navigate = useNavigate();
+
+  const handlePlaceOrderClick = () => {
+    navigate("/cart-list");
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const banner = document.querySelector(".cocktail-banner");
+      const drinksContainer = document.querySelector(".drinks-container");
+      const itemContainer = document.querySelector(".item-container");
+      const headerWallpaperMobile = document.querySelector(
+        ".header-wallpaper-mobile"
+      );
+
+      if (banner) {
+        banner.style.transform = `translateY(${scrollPosition * 0.3}px)`;
+      }
+
+      if (drinksContainer) {
+        drinksContainer.style.transform = `translateY(${
+          scrollPosition * 0.1
+        }px)`;
+      }
+
+      if (itemContainer) {
+        itemContainer.style.transform = `translateY(${
+          scrollPosition * -0.05
+        }px)`;
+      }
+
+      if (headerWallpaperMobile) {
+        headerWallpaperMobile.style.transform = `translateY(${
+          scrollPosition * 0.1
+        }px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header id="home">
       <img
         className="header-wallpaper-mobile mobile"
         src={mobileWallpaper}
@@ -19,7 +67,7 @@ function Header() {
       />
 
       <img
-        className="header-desktop-wallpaper desktop "
+        className="header-desktop-wallpaper desktop"
         src={desktopWallpaper}
         alt="header-wallpaper"
       />
@@ -27,13 +75,12 @@ function Header() {
       <div className="header-container">
         <div className="header-top">
           <p className="logo">FLOWER</p>
+          <Navbar />
         </div>
 
         <div className="flex-box">
-          {" "}
           <div className="banner-wrapper">
             <div className="banner">
-              {" "}
               <img
                 className="cocktail-banner"
                 src={banner}
@@ -42,7 +89,6 @@ function Header() {
             </div>
 
             <div className="description">
-              {" "}
               <p>Quench your thirst with our delicious cocktail & mocktails!</p>
               <p>
                 Refreshing options for everyone to enjoy. Cheers to a healthier
@@ -55,7 +101,9 @@ function Header() {
                 Place your order now!{" "}
                 <img className="arrow-down" src={arrowDown} alt="arrow-down" />
               </h4>
-              <button className="order-now">Order Now </button>
+              <button className="order-now" onClick={handlePlaceOrderClick}>
+                Order Now
+              </button>
             </div>
           </div>
           <div className="header-description">
@@ -76,18 +124,20 @@ function Header() {
                     alt="arrow-down"
                   />
                 </h4>
-                <button className="order-now">Order Now </button>
+                <button className="order-now" onClick={handlePlaceOrderClick}>
+                  Order Now
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div className=" item-container magarita mobile ">
-          <div className="item-frame ">
+        <div className="item-container magarita mobile">
+          <div className="item-frame">
             <img className="drink-image" src={Drink4} alt="drink-image4" />
           </div>
 
-          <div className="item-price ">
+          <div className="item-price">
             <div className="name-price">
               <p>Magarita</p>
               <p>$26</p>
