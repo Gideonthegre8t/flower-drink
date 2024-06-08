@@ -34,27 +34,21 @@ function About2() {
 
           <div className="about2-paragraph">
             <p>
-              Lorem i psum dolor sit amet, consectetur adipiscing elit. Etiam
-              quis sagittis nisl. Morbi mi magna, congue id diam non, eleifend
-              dignissim neque. Fusce convallis ex at eros feugiat elementum. Ut
-              non luctus ante. In blandit purus a eros tempus. From classic
-              cocktails to innovative twists and everything in between. Lorem i
-              psum dolor sit amet, consectetur adipiscing elit. Etiam quis
-              sagittis nisl lorem i psum dolor sit amet, consectetur adipiscing
-              elit. Etiam quis sagittis nisl. Lorem i psum dolor sit amet,
-              consectetur adipiscing elit. Etiam quis sagittis nisl.
+              At Blossom Beverages, we take pride in crafting floral drinks that
+              not only taste great but also offer health benefits. Our
+              dedication to quality means using the finest natural ingredients,
+              ensuring each sip is a delightful experience. We believe that
+              beverages should do more than quench your thirst they should
+              invigorate your senses and support your well-being.
             </p>
 
             <p className="desktop">
-              From classic cocktails to innovative twists and everything in
-              between, join us on a journey of taste and exploration as we
-              celebrate the art of cocktail crafting. From classic cocktails to
-              innovative twists and everything in between, join us on a journey
-              of taste and exploration as we celebrate the art of cocktail
-              crafting. Lorem i psum dolor sit amet, consectetur adipiscing
-              elit. Etiam quis sagittis nisl. Morbi mi magna, congue id diam
-              non, eleifend dignissim neque. Fusce convallis ex at eros feugiat
-              elementum. Ut non luctus ante. In blandit purus a eros tempus.
+              Our journey began with a passion for the natural benefits of
+              flowers. We meticulously source our ingredients from trusted
+              growers who share our commitment to sustainability and quality.
+              From classic flower infusions to innovative botanical blends,
+              every drink is designed to bring a touch of nature to your daily
+              hydration routine.
             </p>
           </div>
 
@@ -71,12 +65,12 @@ function About2() {
             <h3>COCKTAILS</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              quis sagittis nisl. Morbi mi magna, congue id diam non, eleifend
-              dignissim neque. Fusce convallis ex at eros feugiat elementum. Ut
-              non luctus ant. Morbi mi magna, congue id diam non, eleifend
-              dignissim neque. Fusce convallis ex at eros feugiat elementum. Ut
-              non luctus ant
+              Discover the art of cocktails with Blossom Beverages. Our floral
+              drinks blend natural ingredients for a refreshing experience.
+              Enjoy classic favorites or try innovative twists, each crafted to
+              delight your taste buds. Our mixologists use traditional
+              techniques and modern flair, selecting ingredients to enhance the
+              natural flavors and health benefits.
             </p>
           </div>
 
@@ -84,12 +78,12 @@ function About2() {
             <h3>MOCKTAILS</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              quis sagittis nisl. Morbi mi magna, congue id diam non, eleifend
-              dignissim neque. Fusce convallis ex at eros feugiat elementum. Ut
-              non luctus ant. Morbi mi magna, congue id diam non, eleifend
-              dignissim neque. Fusce convallis ex at eros feugiat elementum. Ut
-              non luctus ant
+              Discover the art of mocktails with Blossom Beverages. Our floral
+              drinks blend natural ingredients for a refreshing experience.
+              Enjoy classic favorites or try innovative twists, each crafted to
+              delight your taste buds. Our mixologists use traditional
+              techniques and modern flair, selecting ingredients to enhance the
+              natural flavors and health benefits.
             </p>
           </div>
 
@@ -97,12 +91,12 @@ function About2() {
             <h3>VODKA</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              quis sagittis nisl. Morbi mi magna, congue id diam non, eleifend
-              dignissim neque. Fusce convallis ex at eros feugiat elementum. Ut
-              non luctus ant. Morbi mi magna, congue id diam non, eleifend
-              dignissim neque. Fusce convallis ex at eros feugiat elementum. Ut
-              non luctus ant
+              Experience the essence of vodka with Blossom Beverages. Our vodka
+              drinks blend natural ingredients for a refreshing taste. Enjoy
+              classic flavors or explore innovative mixes, each crafted to
+              satisfy your palate. Our experts combine traditional methods with
+              modern twists, selecting ingredients to enhance flavors and health
+              benefits.
             </p>
           </div>
         </div>

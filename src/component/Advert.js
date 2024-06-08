@@ -8,10 +8,10 @@ function Advert() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const items = document.querySelectorAll(".item-container");
+      const items = document.querySelectorAll(".magarita-desktop");
 
       items.forEach((item, index) => {
-        item.style.transform = `translateY(${scrollPosition * (0.1 )}px)`;
+        item.style.transform = `translateY(${scrollPosition * 0.1}px)`;
       });
     };
 
@@ -55,7 +55,11 @@ function Advert() {
 
         <div className="item-container magarita-desktop">
           <div className="item-frame">
-            <img className="drink-image paloma" src={bloodyMaryCup} alt="bloody-mary" />
+            <img
+              className="drink-image paloma"
+              src={bloodyMaryCup}
+              alt="bloody-mary"
+            />
           </div>
 
           <div className="item-price">

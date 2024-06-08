@@ -39,15 +39,17 @@ function About() {
 
             <div className="paragraph">
               <p>
-                From classic cocktails to innovative twists and everything in
-                between, join us on a journey of taste and exploration as we
-                celebrate the art of cocktail crafting.
+                From classic flower infusions to innovative botanical blends,
+                join us on a journey of taste and exploration as we celebrate
+                the art of floral beverages. Our passion for nature inspires us
+                to create drinks that refresh and nourish, using only the finest
+                natural ingredients. At Blossom Beverages, we believe in the
+                power of flowers to elevate your hydration experience.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                quis sagittis nisl. Morbi mi magna, congue id diam non, eleifend
-                dignissim neque. Fusce convallis ex at eros feugiat elementum.
-                Ut non luctus ante. In blandit purus a eros tempus.
+                Discover the perfect blend of flavor and wellness in every sip.
+                Enjoy our floral drinks and bring a touch of nature to your
+                daily routine.
               </p>
             </div>
 

@@ -10,6 +10,7 @@ import arrowDown from "../assets/images/arrow-down.png";
 import mobileWallpaper from "../assets/images/Background-mobile.png";
 import desktopWallpaper from "../assets/images/Background-desktop.jpg";
 import banner from "../assets/images/banner.png";
+import BackToTopText from "./BackToTopText";
 
 function Header() {
   const navigate = useNavigate();
@@ -22,8 +23,7 @@ function Header() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const banner = document.querySelector(".cocktail-banner");
-      const drinksContainer = document.querySelector(".drinks-container");
-      const itemContainer = document.querySelector(".item-container");
+      const drinks = document.querySelector(".drinks");
       const headerWallpaperMobile = document.querySelector(
         ".header-wallpaper-mobile"
       );
@@ -32,16 +32,8 @@ function Header() {
         banner.style.transform = `translateY(${scrollPosition * 0.3}px)`;
       }
 
-      if (drinksContainer) {
-        drinksContainer.style.transform = `translateY(${
-          scrollPosition * 0.1
-        }px)`;
-      }
-
-      if (itemContainer) {
-        itemContainer.style.transform = `translateY(${
-          scrollPosition * -0.05
-        }px)`;
+      if (drinks) {
+        drinks.style.transform = `translateY(${scrollPosition * 0.1}px)`;
       }
 
       if (headerWallpaperMobile) {
@@ -147,6 +139,7 @@ function Header() {
           </div>
         </div>
       </div>
+      <BackToTopText />
     </header>
   );
 }

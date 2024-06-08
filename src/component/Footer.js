@@ -3,6 +3,7 @@ import whatsapp from "../assets/images/whatsapp.png";
 import facebook from "../assets/images/facebook.png";
 import gmail from "../assets/images/google.png";
 import instagram from "../assets/images/instagram.png";
+import Copyright from "../component/Copyright";
 
 function Footer() {
   return (
@@ -40,6 +41,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <Copyright />
     </section>
   );
 }
