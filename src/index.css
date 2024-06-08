@@ -1180,12 +1180,6 @@
   }
 
   .cart {
-    background-color: #fff;
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 1px 1px 4px 0px #00000040;
-    padding: 2em;
     border-radius: 10px;
     height: 100%;
     margin-right: 3em;
@@ -1405,6 +1399,8 @@
     margin-top: 2em;
     width: 60%;
     height: auto;
+    padding: 2em;
+    margin-bottom: 2em;
   }
 
   .cart-sticker {
